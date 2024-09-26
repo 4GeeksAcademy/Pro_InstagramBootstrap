@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post Instagram Bootstrap </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- BarraNavegar -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram"></i>
+        <h5 class="d-inline-block fs-5">Instagram</h5>
+      </a>
+
+      <div class="d-flex align-right justify-content-end">
+
+        <!-- CuerpoModal  -->
+        <!-- BotonNuevoPost -->
+        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-whatever="@mdo">Create a new post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">
+                      <h6>Caption:</h6>
+                    </label>
+                    <textarea class="form-control" id="message-text"
+                      placeholder="Add the caption of your post here"></textarea>
+                    <div class="row p-2">
+                      <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button class="col-1 border rounded p-1 m-1 btn-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" style="background-color:rgb(9, 99, 9);">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Ajustes -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Tab -->
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+          class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+          class="fa-solid fa-square"></i></button>
+    </li>
+    <!-- Publicaciones 3x3 -->
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src=" https://i0.wp.com/gizmodo.com/app/uploads/2024/08/alien-vs-predator-e1723854859676.jpg?w=1500&resize=1500,1001&ssl=1"
+              alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover ;"
+              src="https://images-0.rakuten.tv/storage/snapshot/shot/31da7484-f0ef-4301-8916-4c411a7237f6-snapshot-1590666170.jpeg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2022/06/23/prometheus.jpeg"
+              alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://www.loslunesseriefilos.com/wp-content/uploads/2017/05/tumbaabierta_horizontal_poster_fecha_estreno_alienCovenant.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://www.filmonpaper.com/wp-content/uploads/2011/05/Alien_quad_UK-2.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://boundingintocomics.com/wp-content/uploads/2022/10/2022.10.12-09.13-boundingintocomics-63472e06986ae.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://lumiere-a.akamaihd.net/v1/images/romul_004b_g_spa-es_70x100_-420x600-f4029c2_1d20e0cd.jpeg?region=0,101,420,420"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://www.sci-fimovieposters.co.uk/images/posters-a/A-0057_Alien_3_quad_movie_poster_l.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img style="height: 30vw; object-fit: cover;"
+              src="https://m.media-amazon.com/images/I/71T03l1YVbL._AC_UF1000,1000_QL80_.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+      </div>
+      <!-- publicacionesPost -->
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="col">
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">My Crazy dog Rayco!</div>
+              <small class="align-bottom">11/23</small>
+            </div>
+            <img style="object-fit: cover;"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCL9amu2CA9WNxE0Y3y1ifBKmQjoP1VJHIQZLmB709EOoT4SW-74J2491tV1TA2B1OcUIYkbziwVfb76Qp0LyROj-pupV5st19RsHzQ0-o0eJ5ruc1L37_3pLj2TCcVE5__YhCjg9jCBU/s1600/brittany-spaniel-or-epagneul-breton-john-daniels.jpg"
+              class="img-fluid w-100 col-12" alt="" />
+            <div class="p-2">
+              <strong>10.000 Likes</strong>
+              <p>He is a very good dog and he likes to play a lot.<strong>Dogs</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">My favorite sport</div>
+              <small class="align-bottom">08/08</small>
+            </div>
+            <img style="object-fit: cover;"
+              src="https://www.paradas.es/export/sites/paradas/.galleries/imagenes-noticias-test/futbol_1576149772602.jpg"
+              class="img-fluid w-100 col-12" alt="" />
+            <div class="p-2">
+              <strong>10.000 Likes</strong>
+              <p>A sport I have always enjoyed.<strong>#RealMadrid</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">Write code</div>
+              <small class="align-bottom">09/24</small>
+            </div>
+            <img style="object-fit: cover;"
+              src="https://seovalladolid.es/wp-content/uploads/2024/02/cosejos-programacion.jpg"
+              class="img-fluid w-100 col-12" alt="" />
+            <div class="p-2">
+              <strong>204 Likes</strong>
+              <p>I love learning to program.<strong>#4Geeks Academy</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!--  link  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
